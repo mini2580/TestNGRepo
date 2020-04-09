@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+  <!--  using preserver order tag to keep the order of execution through xml file  -->
+  <!-- preserve-order tag is by default true, so in whatever order we will specify the classes in that order only its goign to execute
+     -->
+  <suite name = "Preserverorder Test">
+	<test name = "login" preserve-order = "true">
+		<classes>
+			<class name = "TestNGDemo.TestNG_Annotations"></class>
+			<class name = "TestNGDemo.TestNG_Annotaions_2"></class>
+			<class name="TestNGDemo.TestNGDemo_1"></class>
+			<class name="TestNGDemo.TestNGDemo_2"></class>
+		</classes>
+	</test>
+</suite>  
+  
+   
+  
+  
+ <!--   <suite name = "Regression Test">
+	<test name = "login">
+		<classes>
+			<class name = "TestNGDemo.TestNG_Annotations"></class>
+		<class name = "TestNGDemo.TestNG_Annotaions_2"></class>
+		</classes>
+	</test>
+	<test name = "flights">
+		<classes>
+			<class name="TestNGDemo.TestNGDemo_1"></class>
+			<class name="TestNGDemo.TestNGDemo_2"></class>
+		</classes>
+	</test>
+</suite>  -->
+
+<!--   <suite name = "Functional Test">
+	<test name = "Group Test">
+	<groups >
+		<define name = "all">
+			<include name = "homepage_functionality"/>
+			<include name = "login_functionality"/>
+		</define>
+		<define name = "login">
+			<include name = "login_functionality"/>
+		</define>
+		<define name = "homepage">
+			<include name = "homepage_functionality"/>
+		</define>
+		<run>
+			<include name = "all"></include>
+		</run>
+	</groups>
+		<classes>
+			<class name = "TestNGDemo.TestNG_GroupAttribute"></class>
+		</classes>
+	</test>	
+	</suite>  -->

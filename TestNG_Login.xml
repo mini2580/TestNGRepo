@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "login testsuite">
+
+	<test name = "login pagetest1">
+	<parameter name="browser" value="chrome"></parameter>
+	<classes>
+		<class name="TestNGDemo.TestNG_Login"></class>
+	</classes>
+	</test>
+	
+<!--  	<test name = "login pagetest2" enabled = "false">
+	<parameter name="browser" value="firefox"></parameter>
+	<classes>
+		<class name="TestNGDemo.TestNG_Login2"></class>
+	</classes>
+	</test> -->
+
+</suite>

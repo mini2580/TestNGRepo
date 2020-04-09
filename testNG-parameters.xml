@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--  This demonstrates the usage of parameters from xml file to test methods -->
+
+<!--  Always remember the parameters can always have string values, if you want them as integer or any
+other type we have to manipulate them in code file using java-->
+
+
+<suite name = "Parameter Testsuite">
+	<test name = "login" preserve-order = "true">
+	<parameter name = "browser" value = "chromedriver"></parameter>
+	<parameter name = "platform" value = "windows10"></parameter>
+	<parameter name = "status" value = "successful"></parameter>
+		<classes>
+			<class name = "TestNGDemo.TestNG_ParametersDemo"></class>
+		</classes>
+	</test>
+</suite>  

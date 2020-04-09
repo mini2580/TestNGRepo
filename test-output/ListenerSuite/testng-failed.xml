@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ListenerSuite]">
+  <listeners>
+    <listener class-name="Listeners.CustomListener"/>
+  </listeners>
+  <test name="Listener Application test(failed)">
+    <classes>
+      <class name="TestNGDemo.Listeners_Demo">
+        <methods>
+          <include name="testFalse"/>
+          <include name="setUpBeforeMethod"/>
+          <include name="cleanUpAfterMethod"/>
+        </methods>
+      </class> <!-- TestNGDemo.Listeners_Demo -->
+    </classes>
+  </test> <!-- Listener Application test(failed) -->
+</suite> <!-- Failed suite [ListenerSuite] -->

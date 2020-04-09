@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--  will be trying to run the "tests", "classes" and "methods" in parallel -->
+
+<suite name = "Regression Test" parallel = "methods" thread-count = "2">
+	<test name = "login">
+		<classes>
+			<class name = "TestNGDemo.TestNG_Annotations"></class>
+		<class name = "TestNGDemo.TestNG_Annotaions_2"></class>
+		</classes>
+	</test>
+	<test name = "flights">
+		<classes>
+			<class name="TestNGDemo.TestNGDemo_1"></class>
+			<class name="TestNGDemo.TestNGDemo_2"></class>
+		</classes>
+	</test>
+</suite>
